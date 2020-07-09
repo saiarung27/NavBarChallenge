@@ -1,25 +1,11 @@
 import React, { Component } from "react";
-import "./index.css";
+import NavBarComponent from './tab';
 
 export default class NavBar extends Component {
 
   render() {
     return (
-      <div className="layout-column justify-content-center align-items-center">
-
-        <div className="layout-row justify-content-around align-items-center mt-20 links" data-testid="navigation-tabs">
-            <a>Home</a>
-            <a>News</a>
-            <a>Contact</a>
-            <a>About</a>
-        </div>
-
-        <div className="card w-20 ma-0">
-          <section className="card-text" data-testid="tab-content">
-            <span>PAGE</span>
-          </section>
-        </div>
-      </div>
+     <NavBarComponent/>
     );
   }
 }
